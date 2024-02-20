@@ -1,0 +1,441 @@
+/*  reset codes and common codes */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+}
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif; */
+}
+body{
+    background-color: #fff;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+.section-heading{
+    font-size: 8rem;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-align: center;
+}
+.dark{
+    color: black;
+}
+.light{
+    color: white;
+}
+.section-center{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+.btn{
+    background-color: orange;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+/*  reset codes and common codes */
+
+/* Header starts here */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2rem 1rem;
+    min-height: 5vh;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+figure{
+    border: 1px solid white;
+}
+.logo{
+    font-size: 4rem;
+    color: white;
+}
+#menu-icon{
+    display: none;
+    color: white;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;  
+    transition: all 0.4s;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li:hover{
+    background-color: rgb(122, 122, 151);
+    border-radius: 10px;
+}
+.nav-link{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* Header ends here */
+
+/* banners section starts from here */
+
+#blog-banner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    min-height: 95vh;
+}
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner-img{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid black;
+}
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    color: white;
+    background-color: black;
+    margin-bottom: 1.5rem;
+}
+.banner-desc{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+/* banners section ends from here */
+
+/* <!-- about-me section starts from here --> */
+
+#blog-about{
+    min-height: 95vh;
+    background-color: rgb(122, 122, 151);
+    padding: 1% 7%;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: gray;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-header{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.card-desc{
+    padding: 0.4rem;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.card-btn{
+    align-self: center;
+    width: 80%;
+    padding: 1rem;
+}
+/* <!-- about section ends from here --> */
+
+
+/* archives section starts from here */
+.archives-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: transform 0.4s;
+}
+.archives-img:hover{
+    transform: scale(1.1);
+}
+#archives{
+    padding: 5% 1%;
+    min-height: 95vh;
+}
+.archives-container{
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+}
+.archives-container-lists{
+    display: flex;
+    text-align: center;
+}
+.archives-container-list{
+    margin: 1rem;
+}
+/* archives section starts from here */
+
+/* blog posts starts from here */
+
+.blog-post{
+    display: flex;
+    width: 70%;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem black, -0.1rem 0 0.1rem black;
+    transition: transform 0.4s;
+}
+.blog-post:hover{
+    transform: scale(1.1);
+}
+.blog-post-aside img{
+    height: 100%;
+    width: 100%;
+}
+.blog-post-aside{
+    flex: 1;
+}
+.blog-content{
+    flex: 2;
+}
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+}
+.blog-heading{
+    font-size: 2.5rem;
+}
+.blog-sub-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.blog-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.blog-btn{
+    width: 30%;
+    padding: 0.5rem;
+}
+/* blog posts ends from here */
+
+/* contact me starts from here */
+
+#blog-contact{
+    background-color: rgb(122, 122, 151);
+    min-height: 90vh;
+}
+#contact-form{
+    box-shadow: 0.1rem 0.1rem 0.1rem black, -0.1rem 0 0.1rem black;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+input, textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+}
+.contact-btn-feild{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-btn{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+/* contact me starts from here */
+
+/* footer section starts from here */
+footer{
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright-text{
+    font-size: 1.5rem;
+    color: white;
+}
+.footer-icon{
+    font-size: 2.5rem;
+}
+/* footer section ends from here */
+
+/* responsive starts here */
+
+@media (max-width: 992px) {
+    #blog-banner-section{
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width: 40%;
+        flex-direction: column;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .card-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    html{
+        font-size: 55.5%;
+    }
+    #blog-banner-section article{
+        width
+    }
+    .card-container{
+        width: 80%;
+    }
+    #archives{
+        min-height: auto;
+    }
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+    .blog-post-heading{
+        margin-bottom: 3rem;
+    }
+    #blog-contact{
+        min-height: auto;
+    }
+}
+@media (max-width: 600px) {
+    html{
+        font-size: 48.5%;
+    }
+    header{
+        flex-direction: column;
+    }
+    #menu-icon{
+        display: block;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    nav ul{
+        padding-left: 2.5rem;
+    }
+    nav li{
+        display: block;
+        margin-right: 0;
+        margin: 2rem 0;
+    }
+    #blog-banner-section{
+        min-height: auto;
+    }
+    #blog-banner-section article{
+        width: 90%;
+    }
+    .banner-img{
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    #blog-about{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-container{
+        width: 90%;
+    }
+    .archives-container-lists{
+        flex-wrap: wrap;
+    }
+    .blog-post{
+        width: 90%;
+    }
+    #contact-form{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control label{
+        margin-bottom: 0.5rem;
+    }
+    input, textarea{
+        max-width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    #menubar2{
+        display: flex;
+    }
+}
+@media screen and (max-width: 400px) {
+    
+}
+
+
+/* responsive starts here */
